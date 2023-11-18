@@ -65,7 +65,7 @@
             </div>
             <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
                 <i class="fa-solid fa-people-group | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
-                <a href="point.html">Mənim Ailəm</a>
+                <a href="family.html">Mənim Ailəm</a>
             </div>
             
         </div>
@@ -89,60 +89,62 @@
 
         <!-- Main Body start -->
         <main class="p-[40px] h-full">
-
-            <div class="driver-points-section">
-                <h1 class="text-[#202429] text-[32px] font-bold tracking-wide mb-[20px] border-b border-b-slate-400"><i class="fa-solid fa-car | text-[#00A3D7] rounded-md mr-[6px]"></i> Mənim Sürücülük pointlərim</h1>
-                <div class="direver-statistics | flex items-center gap-[64px]">
-                    <div class="graph border border-[#2FBCEE] w-[700px] h-[370px] rounded-md p-[20px] rounded-[15px]">
-                        <div>
-                            <canvas id="myChart"></canvas>
-                        </div>
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <!-- <div class="main-content">
+                <h2 class="font-bold text-[20px] text-[#202429] tracking-wide">Mənim sənədlərim</h2>
+                <div class="content | flex flex-col justify-center items-center | my-[60px]">
+                    <div class="icon-container | mb-[35px]">
+                        <img src="images/not-found.svg">
                     </div>
-                    
-                    <div class="information mt-[40px]">
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>Hal hazirki pointim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
+                    <div class="caption-container | text-[rgba(30,41,44,.8)] text-[20px] mb-[10px] font-semibold">
+                        <span>Məlumat tapılmadı</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="user-card px-4 py-2 border border-slate-400 rounded-lg shadow-sm">
+                <div class="user-information border border-[blue] flex items-center gap-[24px] | mb-[20px]">
+                    <div class="image-container | w-[100px] h-[100px] rounded-full border border-[red]">
+                        <img src="images/large-image-dental.png" class="object-cover object-center" />
+                    </div>
+                    <div class="text-container border border-[red] flex flex-col gap-[12px]">
+                        <div class="name-subcontainer | font-[600] text-[24px]">
+                            <span>Huseyn Farzali Yasin</span>
                         </div>
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>bugun qazandim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
+                        <div class="details-subcontainer | font-semibold text-[18px]">
+                            AA2964016
                         </div>
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>dunen qazandim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
+                    </div>
+                </div>
+                <div class="insurance-information | flex gap-[60px] text-[20px] text-white">
+                    <div class="insurance-details-container px-3 py-2 | flex items-center gap-[20px] border border-slate-300 rounded-md shadow-sm bg-green-700">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-house | text-[40px] text-[white]"></i>
+                        </div>
+                        <div class="information-container | flex flex-col gap-[12px]">
+                            <div class="details">99-XH-757</div>
+                            <div class="insurancedornot">Insuranced</div>
+                        </div>
+                    </div>
+                    <div class="insurance-details-container px-3 py-2 | flex items-center gap-[20px] border border-slate-300 rounded-md shadow-sm bg-green-700">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-car-side | text-[40px] text-[white]"></i>
+                        </div>
+                        <div class="information-container | flex flex-col gap-[12px]">
+                            <div class="details">99-XH-757</div>
+                            <div class="insurancedornot">Insuranced</div>
+                        </div>
+                    </div>
+                    <div class="insurance-details-container px-3 py-2 | flex items-center gap-[20px] border border-slate-300 rounded-md shadow-sm bg-red-700">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-car-side | text-[40px] text-[white]"></i>
+                        </div>
+                        <div class="information-container | flex flex-col gap-[12px]">
+                            <div class="details">99-XH-757</div>
+                            <div class="insurancedornot">Insuranced</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="health-points-section | mt-[60px]">
-                <h1 class="text-[#202429] text-[32px] font-bold tracking-wide mb-[20px] border-b border-b-slate-400"><i class="fa-solid fa-car | text-[#00A3D7] rounded-md mr-[6px]"></i> Mənim Health pointlərim</h1>
-                <div class="direver-statistics | flex items-center gap-[64px]">
-                    <div class="graph border border-[#2FBCEE] w-[700px] h-[370px] rounded-md p-[20px] rounded-[15px]">
-                        <div>
-                            <canvas id="myChart1"></canvas>
-                        </div>
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    </div>
-                    
-                    <div class="information mt-[40px]">
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>Hal hazirki pointim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
-                        </div>
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>bugun qazandim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
-                        </div>
-                        <div class="info-item | h-[90px] mb-[24px] border border-gray-300 rounded-md shadow-sm flex justify-center items-center w-[400px] gap-[32px]">
-                            <span class="text-[#202429] text-[18px] font-bold tracking-wide"><i class="fa-solid fa-star-half-stroke | text-[#0093C9] mr-[8px]"></i>dunen qazandim:</span>
-                            <span class="border text-[#202429] font-bold text-[24px] px-2 py-1 rounded-lg w-[100px] h-[50px] flex justify-center items-center">data</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </main>
         <!-- Main Body end -->
 
@@ -174,55 +176,4 @@
 </body>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-                label: 'Aylıq Sürücülük Pointləri',
-                data: [10, 15, 7, 3, 6, 12, 8, 5, 9, 11, 14, 20],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1,
-                borderRadius: 10,
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-    
-    var ctx1 = document.getElementById('myChart1').getContext('2d');
-    var myChart1 = new Chart(ctx1, {
-        type: 'bar',
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-                label: 'Aylıq Sağlamlıq Pointləri',
-                data: [5, 8, 12, 15, 9, 6, 10, 14, 7, 3, 18, 22],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1,
-                borderRadius: 10,
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
-
-
 </html>
