@@ -28,6 +28,58 @@
     .hover-item-bg {
         background-color: #00A3D7;
     }
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
 </style>
 <body class="transition-all | flex">
 
@@ -55,14 +107,19 @@
                 <i class="fa-solid fa-car-side | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
                 <a href="my-events.html">Mənim hadisələrim</a>
             </div>
-            <div class="panel-item  | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
-                <i class="fa-solid fa-percent | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
-                <a href="bonuses.html">Bonus və kampaniyalar</a>
-            </div>
             <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
                 <i class="fa-solid fa-file-medical | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
                 <a href="my-document.html">Mənim sənədlərim</a>
             </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-file-medical | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="point.html">Mənim pointlərim</a>
+            </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-people-group | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="point.html">Mənim Ailəm</a>
+            </div>
+            
         </div>
     </nav>
     <!-- Left Navigation Panel end -->
@@ -84,8 +141,31 @@
 
         <!-- Main Body start -->
         <main class="p-[40px] h-full">
+            <div class="main-content">
+                <h2 class="font-bold text-[32px] text-[#202429] tracking-wide">Mənim Mənzillərim:</h2>
+                <div class="content | border border-slate-300 shadow-sm rounded-lg h-[80px] px-7 py-2 text-[24px] font-[400] flex justify-between items-center | my-[60px]">
+                    <!-- <div class="icon-container | mb-[35px]">
+                        <img src="images/not-found.svg">
+                    </div>
+                    <div class="caption-container | text-[rgba(30,41,44,.8)] text-[20px] mb-[10px] font-semibold">
+                        <span>Məlumat tapılmadı</span>
+                    </div> -->
+                    <div class="information">
+                        <span class="block text-[#202429] text-[16px] mb-[2px]">Ünvan:</span>
+                        <h2 class="block">Baku, Nizami, E.Suleymanov 51, apt. 17</h2>
+                    </div>
+                    <div class="status-information">
+                        <span class="block text-[#202429] text-[16px] mb-[2px]">Status:</span>
+                        <button info-get class="button-3" role="button">
+                            Sığortalanıb
+                            <span><i class="fa-solid fa-circle-info ml-2"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="insurance-properties-panel | mb-[60px]">
-                <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#0093cb_-3.72%,#78b8d1_119.5%)]">
+                <!-- <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#0093cb_-3.72%,#78b8d1_119.5%)]">
                     <div class="content text-white h-[190px] flex justify-center items-center flex-col">
                         <div class="image-container | w-[60px] h-[60px] m-[0_auto] mb-[20px]">
                             <img class="object-contain object-center" src="images/motor.svg" />
@@ -94,7 +174,7 @@
                             <span class="font-semibold text-[14px] mb-[3px] tracking-wide">Avtomobil sığortası</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#259a74_-3.72%,#61ba9b_119.5%)]">
                     <div class="content text-white h-[190px] flex justify-center items-center flex-col">
                         <div class="image-container | w-[60px] h-[60px] m-[0_auto] mb-[20px]">
@@ -105,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#3d62a9_-3.72%,#5093cb_119.5%)]">
+                <!-- <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#3d62a9_-3.72%,#5093cb_119.5%)]">
                     <div class="content text-white h-[190px] flex justify-center items-center flex-col">
                         <div class="image-container | w-[60px] h-[60px] m-[0_auto] mb-[20px]">
                             <img class="object-contain object-center" src="images/property.svg" />
@@ -114,7 +194,7 @@
                             <span class="font-semibold text-[14px] mb-[3px] tracking-wide">Əmlak sığortası</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="inline-block cart w-[250px] h-[230px] p-[20px] m-[10px] rounded-md border border-slate-400 | shadow-[0_0_20px_rgba(30,41,44,.12)] bg-[linear-gradient(287.09deg,#408136_-3.72%,#71c265_119.5%)]">
                     <div class="content text-white h-[190px] flex justify-center items-center flex-col">
                         <div class="image-container | w-[60px] h-[60px] m-[0_auto] mb-[20px]">
@@ -123,18 +203,6 @@
                         <div class="title-container | flex justify-center items-center">
                             <span class="font-semibold text-[14px] mb-[3px] tracking-wide">Səyahət sığortası</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-content">
-                <h2 class="font-bold text-[20px] text-[#202429] tracking-wide">Sığorta məhsullarım</h2>
-                <div class="content | flex flex-col justify-center items-center | my-[60px]">
-                    <div class="icon-container | mb-[35px]">
-                        <img src="images/not-found.svg">
-                    </div>
-                    <div class="caption-container | text-[rgba(30,41,44,.8)] text-[20px] mb-[10px] font-semibold">
-                        <span>Məlumat tapılmadı</span>
                     </div>
                 </div>
             </div>
