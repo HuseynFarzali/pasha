@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .nav-w {
+        width: 300px;
+        height: 100%;
+    }
+
+    .nav-bg {
+        background-color: #2FBCEE;
+    }
+
+    .main-color {
+        color: #2FBCEE;
+    }
+
+    .icon-bg {
+        background-color: #51C3E7;
+    }
+
+    .hover-item-bg {
+        background-color: #00A3D7;
+    }
+</style>
+<body class="transition-all | flex">
+
+    <!-- Left Navigation Panel start -->
+    <nav class="navigation-panel | nav-w h-[1160px] nav-bg min-w-[300px]">
+        <div class="logo-container pt-[25px] mx-[44px]">
+            <a class="logo-anchor | w-[212px] h-[60px]">
+                <img class="main-logo | object-contain object-center" src="images/logo-white-en.svg" />
+            </a>
+        </div>
+        <div class="navigation-panel-items | w-full mt-[40px] | text-white text-[18px]">
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-ellipsis | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="index.html">Sığorta məhsullarım</a>
+            </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-user-doctor | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="doctor-register.html">Həkimə qeydiyyat</span>
+            </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7]">
+                <i class="fa-solid fa-prescription-bottle-medical | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px] duration-200"></i>
+                <a>Klinikalar və apteklər</a>
+            </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] |  hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-car-side | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="my-events.html">Mənim hadisələrim</a>
+            </div>
+            <div class="panel-item  | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-percent | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="bonuses.html">Bonus və kampaniyalar</a>
+            </div>
+            <div class="panel-item | h-[56px] p-[16px_8px] mb-[20px] | flex items-center gap-[13px] | hover:bg-[#00A3D7] duration-200">
+                <i class="fa-solid fa-file-medical | text-[18px] | icon-bg p-3 rounded-lg w-[40px] h-[40px]"></i>
+                <a href="my-document.html">Mənim sənədlərim</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Left Navigation Panel end -->
+
+    <!-- Main Part Section start -->
+    <section class="main-part w-full h-full relative">
+        <!-- Header start -->
+        <header class="header-panel | h-[80px] w-full px-[60px] shadow-sm border | flex justify-between items-center">
+            <div class="header-item | text-[24px] main-color font-bold">
+                <i class="fa-solid fa-phone"></i>
+                <span>*7000</span>
+            </div>
+            <div class="header-item | text-[16px] font-normal">
+                <span class="text-[#a2a7af] mr-[20px]">Xosh gorduk, <span class="text-[#333] font-semibold">rustem</span></span>
+                <i class="fa-solid fa-gear | font-semibold"></i>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Main Body start -->
+        <main class="p-[40px] h-full">
+            <div class="main-content">
+                <h2 class="font-bold text-[20px] text-[#202429] tracking-wide">Mənim sənədlərim</h2>
+                <div class="content | flex flex-col justify-center items-center | my-[60px]">
+                    <div class="icon-container | mb-[35px]">
+                        <img src="images/not-found.svg">
+                    </div>
+                    <div class="caption-container | text-[rgba(30,41,44,.8)] text-[20px] mb-[10px] font-semibold">
+                        <span>Məlumat tapılmadı</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Main Body end -->
+
+        <!-- Footer start -->
+        <footer class="fixed bottom-0 left-0 | h-[100px] w-full px-[60px] w-full">
+            <div class="footer-content h-full | flex justify-center items-center gap-[60px]">
+                <div class="content-element | h-full">
+                    <span class="font-semibold text-[14px] text-[#a2a7af]">PAŞA Sığorta, 2023</span>
+                </div>
+                <div class="content-element | h-full">
+                    <span class="underline font-bold text-[16px]">Kabinetin istifadə şərtləri</span>
+                </div>
+                <div class="content-element | h-full">
+                    <span class="underline font-bold text-[16px]">FAQ</span>
+                </div>
+                <div class="content-element | h-full">
+                    <div class="inline-block apple h-[48px] mr-[12px]">
+                        <img src="images/appstore_black_icon.svg" class="object-contain object-center" />
+                    </div>
+                    <div class="inline-block google">
+                        <img src="images/googleplay_black_icon.svg" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </section>
+
+</body>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
